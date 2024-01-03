@@ -1,0 +1,14 @@
+.decl UteE(A:number, B:number)
+.decl HXxe(A:number)
+.decl Appy(A:number)
+.output Appy
+
+UteE(-6, 15).
+UteE(5, 4).	
+UteE(-10, 4).
+UteE(-10, -29).
+
+HXxe(-139).
+HXxe(-29).
+
+Appy(D) :- HXxe(D), UteE(SNu,D).

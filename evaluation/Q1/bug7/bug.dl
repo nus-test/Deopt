@@ -1,0 +1,7 @@
+.decl payb(A:float, B:float)
+.decl uuyd(A:float)
+
+payb(0.80300000000000082, 0.80300000000000082).
+uuyd(F) :- payb(0.80300000000000082, F).
+
+.output uuyd

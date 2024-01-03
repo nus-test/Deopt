@@ -1,0 +1,12 @@
+Z 128
+
+fbnd(A:Z) printtuples
+szra(A:Z) input
+
+cdan(A:Z)
+hmyo(A:Z) input
+
+szra(1).
+hmyo(70).
+cdan(C) :- hmyo(C), 65 < C.
+fbnd(F) :- szra(F), 72 != F, 97 = F.

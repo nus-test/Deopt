@@ -1,0 +1,8 @@
+.decl BCCS(A:number, B:number)
+.decl Bkft(A:number)
+.output Bkft
+
+BCCS(12, 4).	
+BCCS(1, 15).
+
+Bkft(max(--Q,-9)) :- BCCS(IAV,Q).

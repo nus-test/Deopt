@@ -1,0 +1,17 @@
+.decl fac(U:float, V:float)
+.decl A(U:float)
+.decl B(U:float)
+.decl out(U:float)
+
+
+fac(2.1, -1.5).
+fac(1.1, 1.1).
+
+
+A(n^m) :- fac(v,n), fac(m,m).
+
+B(m/m) :- A(m), m = m.
+
+out(b) :- B(b).
+
+.output out

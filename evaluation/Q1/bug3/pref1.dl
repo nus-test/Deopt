@@ -1,0 +1,9 @@
+.decl eozn(A:unsigned)
+.output eozn
+
+eozn(6).
+eozn(7).
+eozn(3).
+
+eozn(E1) <= eozn(E2) :- E1<E2.
+

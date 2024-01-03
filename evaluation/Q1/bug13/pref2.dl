@@ -1,0 +1,4 @@
+xukw[A, B] <- [[0.0, null]]
+nwku[A] <- [[null]]
+ssie[F, C] := nwku[C], xukw[F, C]
+?[A, B] := ssie[A, B]

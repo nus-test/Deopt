@@ -1,0 +1,19 @@
+.decl UteE(A:number, B:number)
+.decl BCCS(A:number, B:number)
+.decl Bkft(A:number)
+.decl HXxe(A:number)
+.decl Appy(A:number)
+.output Bkft
+
+UteE(-6, 15).
+UteE(5, 4).	
+UteE(-10, 4).
+UteE(-10, -29).
+
+BCCS(12, 4).	
+BCCS(1, 15).
+
+Bkft(max(--Q,-9)) :- BCCS(IAV,Q).
+HXxe(S-5-9*Oiz) :- BCCS(S,Oiz).
+Appy(D) :- HXxe(D), UteE(SNu,D).
+Bkft(Y) :- BCCS(rzG,Y), !Appy(Y).

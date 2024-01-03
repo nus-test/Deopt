@@ -1,0 +1,7 @@
+Z 128
+
+cdan(A:Z) printtuples
+hmyo(A:Z) input
+
+hmyo(70).
+cdan(C) :- hmyo(C), 65 < C.

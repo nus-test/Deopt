@@ -1,0 +1,9 @@
+input relation Z(a:string)
+output relation PQRI(a:string)
+
+Z("3u37ezDdBg").
+Z("uwsUc").
+Z("zDdBgEbgMd").
+Z("EbgMd2DV3K").
+
+PQRI(v) :- Z(v), Z(nbj).

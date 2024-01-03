@@ -1,0 +1,8 @@
+.decl DupFirst(A:float, B:float)
+.decl FirstAgain(A:float)
+
+.output FirstAgain
+
+DupFirst(0, 0).
+
+FirstAgain(x) :- DupFirst(x,_).

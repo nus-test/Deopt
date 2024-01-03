@@ -1,0 +1,15 @@
+input relation Z(a:string)
+input relation PLEY(a:string)
+output relation NFUV(a:string)
+
+Z("3u37ezDdBg").
+Z("uwsUc").
+Z("zDdBgEbgMd").
+Z("EbgMd2DV3K").
+
+PLEY("3u37ezDdBg").
+PLEY("uwsUc").
+PLEY("zDdBgEbgMd").
+PLEY("EbgMd2DV3K").
+
+NFUV(q) :- Z(fym), PLEY(q).

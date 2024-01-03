@@ -1,0 +1,20 @@
+.decl Pairs(A:float, B:float)
+Pairs(0,0).
+
+.decl First(A:float)
+.decl DupFirst(A:float, B:float)
+.decl FirstAgain(A:float)
+.decl Fail()
+
+.decl Out(A:float)
+.output Out
+
+First(x) :- Pairs(x,_).
+
+DupFirst(x,x) :- First(x).
+
+FirstAgain(x) :- DupFirst(x,_).
+
+Fail() :- FirstAgain(x), !FirstAgain(x).
+
+Out(x) :- Fail(), First(x).

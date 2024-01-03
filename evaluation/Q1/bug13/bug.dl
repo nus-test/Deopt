@@ -1,0 +1,5 @@
+phve[A, B] <- [[-0.0, null], [0.0, null]]
+xukw[A, B] := phve[A, B], ge(A, 0)
+nwku[F] := phve[_, F]
+ssie[F, C] := nwku[C], xukw[F, C]
+?[A, B] := ssie[A, B]

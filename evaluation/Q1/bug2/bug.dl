@@ -1,0 +1,10 @@
+.decl yona(A:symbol, C:float)
+.decl idck(B:float) magic
+.decl zsjo(A:float) 
+
+yona("DrdskfIQ9A", 0).
+
+idck(A) :- yona(D, A).
+zsjo(D) :- idck(D), idck(min(-D,D)).
+
+.output zsjo

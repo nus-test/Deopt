@@ -1,0 +1,11 @@
+.decl gQk(U:number)
+.decl QOq(U:number, V:number)
+.decl RwL(U:number)
+.output RwL
+
+gQk(18).
+
+QOq(18, 18).
+
+RwL(qr) :- QOq(u,qr), gQk(u), gQk(u).
+

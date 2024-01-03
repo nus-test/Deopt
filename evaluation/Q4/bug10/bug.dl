@@ -1,0 +1,16 @@
+Z 64
+
+in1(A:Z) input
+in2(A:Z, B:Z) input
+R(A:Z, B:Z) 
+out(A:Z) printtuples
+
+
+in1(49).
+in1(10).
+in2(25, 10).
+in2(16, 13).
+in2(24, 22).
+
+R(V,M) :- in2(V,M), in1(M).   ### 25, 10
+out(f) :- R(f,c), R(f,a), R(f,b).

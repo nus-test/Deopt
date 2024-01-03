@@ -1,0 +1,8 @@
+.decl A(U:float)
+.decl B(U:float)
+.output B
+
+A((-1)^0.5).
+A(1.11053).
+
+B(m/m) :- A(m), m = m.

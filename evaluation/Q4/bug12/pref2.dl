@@ -1,0 +1,12 @@
+Z 64
+
+WWW(A:Z) input
+y(A:Z) input
+out(A:Z) printtuples
+
+WWW(18).
+WWW(15).
+WWW(25).
+WWW(16).
+
+out(c) :- y(a), WWW(b), WWW(c).

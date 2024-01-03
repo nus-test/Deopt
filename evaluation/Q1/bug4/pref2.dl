@@ -1,0 +1,9 @@
+.decl kdof(A:unsigned, B:number)
+.decl ovqb(A:number, B:unsigned) magic
+.decl khkw(A:number, B:unsigned)
+
+.output khkw
+kdof(1, 9).
+ovqb(0, 1).
+
+khkw(A, B) :- kdof(B, A), !ovqb(A, B).

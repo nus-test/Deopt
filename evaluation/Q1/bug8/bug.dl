@@ -1,0 +1,7 @@
+.decl ytfh(A:float)
+.decl bkbi(A:float, B:float) eqrel
+.output bkbi
+
+ytfh(1).
+
+bkbi(E, E+1) :- ytfh(E).

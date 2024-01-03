@@ -1,0 +1,5 @@
+.decl IBf(U:unsigned)
+.decl dfm(U:unsigned)
+.output dfm
+
+dfm(a) :- IBf(a).

@@ -1,0 +1,20 @@
+Z 128
+
+mxsr(A:Z) input
+qjfp(A:Z) input
+jrkr(A:Z, B:Z) input
+rtkv(A:Z) input
+ebbj(A:Z)
+oxyx(A:Z)
+iypi(A:Z) printtuples
+
+
+jrkr(80, 80).
+jrkr(29, 29).
+jrkr(4, 4).
+mxsr(1).
+qjfp(1).
+rtkv(1).
+ebbj(A) :- mxsr(A), 43 != A.
+oxyx(C) :- qjfp(C), 76 != C.
+iypi(A) :- rtkv(A), 77 < A.

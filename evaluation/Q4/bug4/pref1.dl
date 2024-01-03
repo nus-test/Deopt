@@ -1,0 +1,8 @@
+.decl First(A:float)
+.decl DupFirst(A:float, B:float)
+
+.output DupFirst
+
+First(0).
+
+DupFirst(x,x) :- First(x), x < 100.

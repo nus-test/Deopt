@@ -1,0 +1,6 @@
+Z 128
+
+mxsr(A:Z) input
+ebbj(A:Z) printtuples
+mxsr(1).
+ebbj(A) :- mxsr(A), 43 != A.

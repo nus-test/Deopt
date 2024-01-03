@@ -1,0 +1,8 @@
+.decl kdof(A:unsigned, B:number)
+.decl ovqb(A:number, B:unsigned) magic
+
+kdof(1, 9).
+
+ovqb(A^-3, B) :- kdof(B, A).
+
+.output ovqb

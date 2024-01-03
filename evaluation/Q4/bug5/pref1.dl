@@ -1,0 +1,8 @@
+.decl A(x:float)
+.decl B(A:float, B:float, C:float)
+.output B
+
+
+A(0).
+A(1).
+B(e,e,max(-D,e)) :- A(D), A(e).

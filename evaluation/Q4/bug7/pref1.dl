@@ -1,0 +1,10 @@
+.decl out(A:float) brie 
+.decl res(A:float)
+
+out(-18.9150009).
+out(-13.6520004).
+out(2.48600006).
+
+res(a) :- out(a).
+
+.output res

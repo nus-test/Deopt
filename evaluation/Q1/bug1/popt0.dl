@@ -1,0 +1,6 @@
+.decl olkw(A:float)
+.decl kkcb(A:float)
+.output kkcb
+
+olkw(-0).
+kkcb(A) :- olkw(A).

@@ -1,0 +1,7 @@
+.decl kdof(A:unsigned, B:number)
+.output kdof
+kdof(1, -2).
+kdof(1, 9).
+kdof(B, A1) <= kdof(B, A2) :- A1<A2.
+
+

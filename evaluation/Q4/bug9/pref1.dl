@@ -1,0 +1,8 @@
+Z 64
+
+in(A:Z) input
+out(A:Z) printtuples
+
+in(43).
+in(33).
+out(a) :- in(a), in(a), in(a).

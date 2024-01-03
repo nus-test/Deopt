@@ -1,0 +1,7 @@
+x[A] := A = 1
+y[A, A] := A = 1
+y[A, B] := A = 0, B = 1, x[B]
+
+?[C] := y[A, _], y[C, A]
+
+:disable_magic_rewrite true

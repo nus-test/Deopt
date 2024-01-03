@@ -1,0 +1,7 @@
+.decl yona(A:symbol, C:float)
+.decl idck(B:float) magic
+.output idck
+
+yona("DrdskfIQ9A", 0).
+
+idck(A) :- yona(D, A).

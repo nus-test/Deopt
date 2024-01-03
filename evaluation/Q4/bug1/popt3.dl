@@ -1,0 +1,14 @@
+.decl MZV(U:number, V:number)
+.decl HqV(U:number)
+.decl gQk(U:number)
+.decl QOq(U:number, V:number)
+.decl RwL(U:number)
+.output RwL
+
+MZV(9, 28).
+MZV(18, 18).
+
+HqV(a) :- MZV(a,b).
+gQk(jW) :- MZV(jW,jW).
+QOq(aS,GF) :- MZV(GF,GF), gQk(M), HqV(aS), MZV(aS,M).
+RwL(qr) :- QOq(u,qr), gQk(u), gQk(u).

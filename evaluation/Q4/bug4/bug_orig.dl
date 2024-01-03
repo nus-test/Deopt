@@ -1,0 +1,50 @@
+.decl oAhz(A:float, B:float)
+.decl AvvH(A:float)
+.decl BMaq(A:float, B:float)
+.decl dnIW(A:float, B:float) 
+.decl wVSI(A:float) 
+.decl XxRQ(A:float, B:float, C:float) 
+.decl uAsC(A:float) 
+.decl ByPj(A:float, B:float) 
+.decl KHUU(A:float) 
+.decl fefn(A:float, B:float)
+.decl aZKS(A:float) 
+.decl KrUb(A:float, B:float)
+.decl MBkI(A:float)
+.decl jicu(A:float)
+.decl Sftg(A:float) 
+.decl vfkR(A:float) 
+.decl PqGx(A:float, B:float, C:float)
+.decl OExx(A:float)
+.decl KUsh(A:float) 
+.decl KmRO(A:float, B:float, C:float) 
+.decl YkdK(A:float) 
+.decl QUlY(A:float)
+.decl negate(A:float, B:float) 
+
+.input oAhz
+.input AvvH
+.input BMaq
+
+XxRQ(w,s,E) :- AvvH(Q), AvvH(s), AvvH(E), AvvH(s), oAhz(w,F).   
+uAsC(max(-x,-10.605)) :- BMaq(x,x), BMaq(x,x), x <= x.   
+ByPj(z,x) :- XxRQ(y,z,x), ord(x) >= ord(z).   
+ByPj(Q,min(q,9.585)) :- uAsC(q), oAhz(E,q), BMaq(Q,E), uAsC(Q), uAsC(M), 5.561 = q.   
+KHUU(R) :- ByPj(R,T).   
+fefn(o,min(l,O)) :- ByPj(l,o), BMaq(l,N), ByPj(m,m), oAhz(W,O), ord(W) <= ord(N).   
+aZKS(g) :- ByPj(g,M), ord(M) > ord(g).   
+KrUb(max(J,M),v) :- XxRQ(v,M,J), BMaq(M,M), AvvH(h), ByPj(h,V), ByPj(M,h).   
+MBkI(min(--i,i)) :- AvvH(T), ByPj(i,T), -2.274 > i.   
+jicu(min(U,v)) :- fefn(v,U), ByPj(v,U).   
+Sftg(y) :- MBkI(y), !fefn(y,y).   
+vfkR(F) :- aZKS(F), Sftg(F), !Sftg(F).   
+PqGx(m,f,g) :- jicu(b), vfkR(m), KrUb(D,g), KrUb(g,f), !Sftg(b).   
+OExx(r) :- KHUU(F), aZKS(r), jicu(r), MBkI(r), vfkR(F), !KHUU(F).   
+KUsh(w), wVSI(J) :- XxRQ(w,J,w), Sftg(w), KHUU(w), !vfkR(w), w = w.   
+KmRO(D,V,max(--r,V)), dnIW(D,D) :- PqGx(D,T,r), OExx(X), AvvH(k), Sftg(V), oAhz(D,k), !jicu(r), ord(V) != ord(r).   
+YkdK(min(--i,V)), dnIW(V,i):- KrUb(O,i), Sftg(V), KUsh(V), !KHUU(O), V < i.   
+negate(L,L) :- Sftg(Y), vfkR(h), MBkI(L), !dnIW(L,L).
+QUlY(h) :- Sftg(Y), vfkR(h), MBkI(L), !negate(L,L).   
+ 
+
+.output QUlY

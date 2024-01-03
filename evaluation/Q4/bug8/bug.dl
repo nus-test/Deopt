@@ -1,0 +1,9 @@
+.type Word <: symbol
+.decl init(a: number, b:Word) 
+.decl words (i:number, w:Word) brie 
+.decl bigram (w:Word, w1:Word)
+.output bigram
+init(0,"a").
+init(1, "b").
+words(a, b):- init(a, b).
+bigram(w, w1)  :- words(i,w), words(i+1,w1).

@@ -1,0 +1,7 @@
+Z 128
+
+rtkv(A:Z) input
+iypi(A:Z) printtuples
+
+rtkv(1).
+iypi(A) :- rtkv(A), 77 < A.

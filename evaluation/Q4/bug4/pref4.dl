@@ -1,0 +1,9 @@
+.decl First(A:float)
+.decl Fail()
+
+.decl Out(A:float)
+.output Out
+
+First(0).
+
+Out(x) :- Fail(), First(x).

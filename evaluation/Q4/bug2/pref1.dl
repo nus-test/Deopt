@@ -1,0 +1,6 @@
+.decl IBf(U:unsigned)
+.decl dfm(U:unsigned)
+.decl onG(U:unsigned, V:unsigned)
+.output onG
+
+onG(a,b) :- IBf(a), dfm(b), IBf(a).

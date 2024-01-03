@@ -1,0 +1,21 @@
+.decl MZV(U:number, V:number)
+.input MZV
+
+.decl HqV(U:number)
+HqV(a) :- MZV(a,b).
+
+.decl gQk(U:number)
+gQk(jW) :- MZV(jW,jW).
+
+.decl QOq(U:number, V:number)
+QOq(aS,GF) :- MZV(GF,GF), gQk(M), HqV(aS), MZV(aS,M).
+
+.decl RwL(U:number)
+RwL(qr) :- QOq(u,qr), gQk(u), gQk(u).
+
+.decl out(U:number, V:number)
+out(jB,ym) :- gQk(h), RwL(ym), MZV(h,jB).
+
+
+ // ------ ouput ----- 
+.output out

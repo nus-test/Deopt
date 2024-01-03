@@ -1,0 +1,10 @@
+.decl A(x:float)
+.decl B(A:float, B:float, C:float) inline
+.decl out(A:float)
+.output out
+
+A(0.0).
+
+A(x+1)  :- A(x), x=-0.0.
+B(e,e,max(-D,e)) :- A(D), A(e).
+out(R) :- A(R), B(a,b,a), B(a,R,R), B(R,R,R).

@@ -1,0 +1,10 @@
+.decl IBf(U:unsigned)
+.decl dfm(U:unsigned)
+.decl onG(U:unsigned, V:unsigned)
+.decl YVz(U:unsigned)
+.input IBf
+.output YVz
+
+dfm(a) :- IBf(a).
+onG(a,b) :- IBf(a), dfm(b), IBf(a).
+YVz(a) :- onG(a,a), onG(b,a).

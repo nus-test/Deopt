@@ -1,0 +1,8 @@
+.decl B(U:float)
+.decl out(U:float)
+.output out
+
+B((-1)^0.5).
+B(1).
+
+out(b) :- B(b).

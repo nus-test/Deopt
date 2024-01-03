@@ -1,0 +1,8 @@
+Z 64
+
+aicl(A:Z) input
+in(A:Z) printtuples
+
+aicl(43).
+aicl(33).
+in(a) :- aicl(a).

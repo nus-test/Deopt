@@ -1,0 +1,8 @@
+.decl FirstAgain(A:float)
+.decl Fail()
+
+.output Fail
+
+FirstAgain(0).
+
+Fail() :- FirstAgain(x), !FirstAgain(x).

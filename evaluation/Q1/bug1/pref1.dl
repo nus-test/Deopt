@@ -1,0 +1,6 @@
+.decl kkcb(A:float)
+.decl nvuk(A:float)
+.output nvuk
+
+kkcb(-0).
+nvuk(A) :- kkcb(A), 0.0 = A.

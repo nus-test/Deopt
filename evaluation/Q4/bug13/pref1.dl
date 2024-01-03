@@ -1,0 +1,15 @@
+input relation Z(a:string)
+input relation PQRI(a:string)
+output relation PLEY(a:string)
+
+Z("3u37ezDdBg").
+Z("uwsUc").
+Z("zDdBgEbgMd").
+Z("EbgMd2DV3K").
+
+PQRI("3u37ezDdBg").
+PQRI("uwsUc").
+PQRI("zDdBgEbgMd").
+PQRI("EbgMd2DV3K").
+
+PLEY(o) :- PQRI(x), Z(o), Z(x), PQRI(z), PQRI(x). // modified rule

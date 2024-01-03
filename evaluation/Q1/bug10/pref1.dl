@@ -1,0 +1,7 @@
+Z 128
+
+qjfp(A:Z) input
+oxyx(A:Z) printtuples
+qjfp(1).
+
+oxyx(C) :- qjfp(C), 76 != C.

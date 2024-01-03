@@ -1,0 +1,3 @@
+phve[A, B] <- [[-0.0, null], [0.0, null]]
+nwku[F] := phve[_, F]
+?[A] := nwku[A]

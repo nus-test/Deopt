@@ -1,0 +1,10 @@
+.decl a(A:number)
+.decl b(A:number) inline
+.decl c(A:number) no_magic
+
+.output c
+
+a(-1). a(1). a(2).
+
+b(A) :- a(A), a(-A).
+c(A) :- b(A).

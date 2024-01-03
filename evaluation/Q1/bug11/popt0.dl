@@ -1,0 +1,11 @@
+Z 128
+
+szra(A:Z) input
+hmyo(A:Z) input
+cdan(A:Z) printtuples
+
+
+szra(1).
+hmyo(70).
+
+cdan(C) :- hmyo(C), 65 < C.

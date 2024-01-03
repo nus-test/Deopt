@@ -1,0 +1,12 @@
+.decl A(x:float)
+.decl B(A:float, B:float, C:float)
+.decl out(A:float)
+.output out
+
+A(0).
+A(1).
+B(0, 0, -0).
+B(0, 0, 0).
+B(1, 1, 1).
+out(R) :- A(R), B(a,b,a), B(a,R,R), B(R,R,R).
+

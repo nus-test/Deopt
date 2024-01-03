@@ -1,0 +1,9 @@
+.decl MZV(U:number, V:number)
+.decl gQk(U:number)
+.output gQk
+
+MZV(9, 28).
+MZV(18, 18).
+
+gQk(jW) :- MZV(jW,jW).
+

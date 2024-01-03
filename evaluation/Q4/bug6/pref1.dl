@@ -1,0 +1,8 @@
+.decl BCCS(A:number, B:number)
+.decl HXxe(A:number)
+.output HXxe
+
+BCCS(12, 4).	
+BCCS(1, 15).
+
+HXxe(S-5-9*Oiz) :- BCCS(S,Oiz).

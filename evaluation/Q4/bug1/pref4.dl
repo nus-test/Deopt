@@ -1,0 +1,15 @@
+.decl MZV(U:number, V:number)
+.decl gQk(U:number)
+.decl RwL(U:number)
+.decl out(U:number, V:number)
+.output out
+
+MZV(9, 28).
+MZV(18, 18).
+
+gQk(18).
+
+RwL(18).
+
+out(jB,ym) :- gQk(h), RwL(ym), MZV(h,jB).
+

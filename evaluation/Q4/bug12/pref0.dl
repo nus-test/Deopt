@@ -1,0 +1,14 @@
+Z 64
+
+WWW(A:Z) input
+mAqE(A:Z) input
+p(A:Z) printtuples
+
+WWW(18).
+WWW(15).
+WWW(25).
+WWW(16).
+mAqE(29).
+mAqE(39).
+
+p(g) :- mAqE(x), WWW(g), x < g.

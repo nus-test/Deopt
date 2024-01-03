@@ -1,0 +1,7 @@
+Z 64
+
+R(A:Z, B:Z) input
+out(A:Z) printtuples
+
+R(25,10).
+out(f) :- R(f,c), R(f,a), R(f,b).

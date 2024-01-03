@@ -1,0 +1,18 @@
+.decl a(c:unsigned)
+.decl d(b:unsigned, c:unsigned) magic eqrel
+.decl bxax(e:unsigned)
+
+a(8).
+a(4).
+d(4, 4).
+d(4, 8).
+d(4, 12).
+d(8, 4).
+d(8, 8).
+d(8, 12).
+d(12, 4).
+d(12, 8).
+d(12, 12).
+bxax(c) :- d(c, e), a(c).
+
+.output bxax

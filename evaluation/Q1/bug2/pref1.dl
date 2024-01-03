@@ -1,0 +1,6 @@
+.decl idck(B:float) magic
+.decl zsjo(A:float) 
+.output zsjo
+
+idck(0).
+zsjo(D) :- idck(D), idck(min(-D,D)).

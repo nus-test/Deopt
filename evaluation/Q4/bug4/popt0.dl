@@ -1,0 +1,8 @@
+.decl Pairs(A:float, B:float)
+.decl First(A:float)
+
+.output First
+
+Pairs(0,0).
+
+First(x) :- Pairs(x,_).

@@ -1,0 +1,8 @@
+.decl olkw(A:float)
+.decl kkcb(A:float) inline
+.decl nvuk(A:float)
+.output nvuk
+
+olkw(-0).
+kkcb(A) :- olkw(A).
+nvuk(A) :- kkcb(A), 0.0 = A.

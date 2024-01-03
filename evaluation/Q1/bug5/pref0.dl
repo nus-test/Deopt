@@ -1,0 +1,8 @@
+.decl a(c:unsigned)
+.decl d(b:unsigned, c:unsigned) magic eqrel
+.output d
+
+a(8).
+a(4).
+
+d(f+4, f) :- a(f).

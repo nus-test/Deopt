@@ -1,0 +1,11 @@
+.decl BCCS(A:number, B:number)
+.decl Bkft(A:number)
+.decl Appy(A:number)
+.output Bkft
+
+BCCS(12, 4).	
+BCCS(1, 15).
+
+Appy(-29).
+
+Bkft(Y) :- BCCS(rzG,Y), !Appy(Y).

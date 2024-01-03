@@ -1,0 +1,5 @@
+.decl onG(U:unsigned, V:unsigned)
+.decl YVz(U:unsigned)
+.output YVz
+
+YVz(a) :- onG(a,a), onG(b,a).

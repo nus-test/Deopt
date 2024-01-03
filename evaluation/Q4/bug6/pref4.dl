@@ -1,0 +1,15 @@
+.decl UteE(A:number, B:number)
+.decl Bkft(A:number)
+.decl bNtR(A:number)
+
+UteE(-6, 15).
+UteE(5, 4).	
+UteE(-10, 4).
+UteE(-10, -29).
+
+Bkft(4).
+Bkft(15).
+
+bNtR(J) :- UteE(J,VHk), Bkft(VHk).
+
+.output bNtR

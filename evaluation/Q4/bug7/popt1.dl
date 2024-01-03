@@ -1,0 +1,13 @@
+.decl wRnH(A:float, B:float)
+.decl out(A:float) brie inline
+.decl res(A:float)
+.output res
+
+wRnH(-21.360, -21.360).
+wRnH(-20.607, 2.486).
+wRnH(2.486, 2.486).
+wRnH(-13.652, -13.652).
+wRnH(-18.915, -18.915).
+
+out(r) :- wRnH(a,r), wRnH(r,r).
+res(a) :- out(a).

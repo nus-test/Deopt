@@ -1,0 +1,5 @@
+.decl b(A:number)
+.decl c(A:number)
+.output c
+b(1). b(-1).
+c(A) :- b(A).

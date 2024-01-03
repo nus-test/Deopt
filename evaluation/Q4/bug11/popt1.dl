@@ -1,0 +1,10 @@
+Z 64
+
+in(A:Z, B:Z) input
+cond(A:Z, B:Z)
+out(A:Z) printtuples
+
+in(45, 40).
+
+cond(c,Z) :- in(c,Z), c > Z.
+out(y) :- in(A,y), cond(B,y).

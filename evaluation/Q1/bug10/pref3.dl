@@ -1,0 +1,11 @@
+Z 128
+
+jrkr(A:Z, B:Z) input
+
+fvof(A:Z) printtuples
+
+jrkr(80, 80).
+jrkr(29, 29).
+jrkr(4, 4).
+
+fvof(E) :- jrkr(D, E), 8 != E, 71 < D.
