@@ -115,3 +115,8 @@ In each folder within the `evaluation` directory, we provide a detailed `README`
 For effectiveness evaluation, we provide a [README](./evaluation/Q1/README.md) file to show all of the bug reports. We also provide the bug-inudcing test cases (including the optimized and reference programs) for each logic bug. The `supplementary_material.pdf` file provide the results of each optimized and reference program.
 
 For sensitivity analysis and efficiency evaluation, you can copy the [run.py](./evaluation/Q2Q3/run.py) to the same directory of deopt and install the necessary dependency `pip3 install matplotlib numpy`, then run `python3 run.py`, which will automatically execute all of the experiments and generate the Figure 6 - 10 in our paper. We provide the detailed information in [README](./evaluation/Q2Q3/README.md).
+
+
+# Acknowledgement
+
+Deopt is implemented based on [queryFuzz](https://github.com/Practical-Formal-Methods/queryFuzz). Deopt has four modifications. First, Deopt supports another Datalog engine (i.e., CozoDB). Second, Deopt supports incremental rule generation. Third, Deopt supports additional language features (e.g., subsumption, equivalence relation, and query plan). Fourth, Deopt implements our test oracle with approximately 200 LOC.
