@@ -9,7 +9,7 @@ Datalog Engines OPtimization Tester.
 Build the docker file and run Soufflé testing in docker.
 
 ```
-cd deopt
+cd Deopt
 docker build -t deopt ./
 docker run -ti --rm -v $PWD:/tmp/deopt deopt /bin/bash -c "cd deopt; python3 deopt/__main__.py"
 ```
