@@ -65,8 +65,8 @@ class Z3Runner(BaseRunner):
         self.program.dump_program_log_file()
 
         p = subprocess.Popen(command, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-        standard_error = p.stderr.read().decode()
-        standard_output = p.stdout.read().decode()
+        standard_error = p.stderr.read().decode(errors='ignore')
+        standard_output = p.stdout.read().decode(errors='ignore')
 
         self.program.add_log_text("\nSTANDARD ERROR: " + standard_error)
         self.program.add_log_text("\nSTANDARD OUTPUT: " + standard_output)
@@ -106,8 +106,8 @@ class Z3Runner(BaseRunner):
         self.program.add_log_text("\tCommand: " + command)
         self.program.dump_program_log_file()
         p = subprocess.Popen(command, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-        standard_error = p.stderr.read().decode()
-        standard_output = p.stdout.read().decode()
+        standard_error = p.stderr.read().decode(errors='ignore')
+        standard_output = p.stdout.read().decode(errors='ignore')
         self.program.add_log_text("\nSTANDARD ERROR: " + standard_error)
         self.program.add_log_text("\nSTANDARD OUTPUT: " + standard_output)
         self.program.dump_program_log_file()

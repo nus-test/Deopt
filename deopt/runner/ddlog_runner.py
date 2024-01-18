@@ -165,8 +165,8 @@ class DDlogRunner(BaseRunner):
         
         print("\tDDLOG -> RUST   COMMAND = " + command)
         p = subprocess.Popen(command, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-        standard_error = p.stderr.read().decode()
-        standard_output = p.stdout.read().decode()
+        standard_error = p.stderr.read().decode(errors='ignore')
+        standard_output = p.stdout.read().decode(errors='ignore')
         signal = self.process_standard_error(standard_error=standard_error, file_type=orig)
         if signal != 0:
             self.program.add_log_text(standard_error)
@@ -187,8 +187,8 @@ class DDlogRunner(BaseRunner):
         print("running:")
         print("\tRUST -> EXE   COMMAND = " + command)
         p = subprocess.Popen(command, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-        standard_error = p.stderr.read().decode()
-        standard_output = p.stdout.read().decode()
+        standard_error = p.stderr.read().decode(errors='ignore')
+        standard_output = p.stdout.read().decode(errors='ignore')
 
         self.program.add_log_text("\nSTANDARD ERROR: " + standard_error)
         self.program.add_log_text("\nSTANDARD OUTPUT: " + standard_output)
@@ -214,8 +214,8 @@ class DDlogRunner(BaseRunner):
         command = "timeout -s SIGKILL " + str(TIMEOUT) + "s " + program_file_path[:-3] + "_ddlog/target/release/" + self.program_name + "_cli < " + self.program.get_program_path() + "facts.dat"
         print("RUN command -> " + command)
         p = subprocess.Popen(command, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-        standard_error = p.stderr.read().decode()
-        standard_output = p.stdout.read().decode()
+        standard_error = p.stderr.read().decode(errors='ignore')
+        standard_output = p.stdout.read().decode(errors='ignore')
         signal = self.process_standard_error(standard_error, orig)
 
         if signal != 0:
@@ -262,7 +262,7 @@ class DDlogRunner(BaseRunner):
         cp_command = "cp " + self.program.get_program_file_path() + " " + execution_file_path
         p = subprocess.Popen(cp_command, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         print(cp_command)
-        print(p.stderr.read().decode())
+        print(p.stderr.read().decode(errors='ignore'))
         
         self.path_to_engine = self.params["path_to_ddlog_engine"]
         signal = self.compile_datalog_into_rust(orig=True, program_file_path=execution_file_path)
@@ -285,7 +285,7 @@ class DDlogRunner(BaseRunner):
         cp_command = "cp " + self.program.get_single_query_file_path() + " " + execution_file_path
         p = subprocess.Popen(cp_command, shell=True, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
         print(cp_command)
-        print(p.stderr.read().decode())
+        print(p.stderr.read().decode(errors='ignore'))
 
         self.path_to_engine = self.params["path_to_ddlog_engine"]
         signal = self.compile_datalog_into_rust(orig=False, program_file_path=execution_file_path)
